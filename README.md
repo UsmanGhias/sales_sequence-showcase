@@ -8,8 +8,4 @@
     ### Technologies:
     - Python
     - Odoo
-    - PostgreSQL
-
-    ### Contact:
-    For access or inquiries, contact [your_email@example.com].
-    
+    - PostgreSQL    
