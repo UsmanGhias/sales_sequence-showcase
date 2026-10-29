@@ -1,56 +1,33 @@
-# sales_sequence
+# Separate Quotation and Sale Order Numbers
 
-Metadata repository for the private repo: sales_sequence. Usman Ghias Sales Sequence Code Odoo Apps Store
+![Odoo](https://img.shields.io/badge/Odoo-17.0-714B67) ![Editions](https://img.shields.io/badge/Editions-Community%2C_Enterprise-2563EB) ![License](https://img.shields.io/badge/License-LGPL--3-0F766E)
 
-> Portfolio showcase for a private/proprietary implementation. The production source is **not** included in this repository.
+Auditors and sales managers often want quotations and confirmed orders numbered in separate series. This app gives each quotation a number from one sequence and assigns a second number from another sequence when the order is confirmed.
 
-## Overview
+## What it does
 
-`sales_sequence` is documented here as a professional case study. This repository contains portfolio metadata and high-level documentation only.
+- Quotation Name from its own sequence when the quotation is created
+- Sale Order Name from a second sequence on confirmation
+- Both sequences editable under Settings, Technical, Sequences
 
-## Problem solved
+## How to use it
 
-Metadata repository for the private repo: sales_sequence. Usman Ghias Sales Sequence Code Odoo Apps Store
+1. Install the app and create a quotation. Confirm it to see the second number.
 
-## Key capabilities
+## Technical notes
 
-- Business-process customization aligned to operational needs
-- Integration with standard Odoo apps where applicable
-- Practical UI and workflow improvements for end users
+Technical name `sale_sequence`, Odoo 17.0.
 
-## Technology and Odoo version
+Overrides `create` and `write` on `sale.order` and ships two `ir.sequence` records. Depends on `sale`.
 
-- Stack: Odoo, Python, ERP customization
-- Repository type: portfolio case study / documentation
-- Related module/project name: `sales_sequence`
+## Get the module
 
-## My contribution
+This module is not on the Odoo App Store yet. Email [iusmanghias@gmail.com](mailto:iusmanghias@gmail.com?subject=sale_sequence) for a licence, the full source code and installation on your database.
 
-Architecture, development, customization, integration, testing, and delivery support for the underlying implementation (as applicable to this project).
-
-## Architecture at a high level
-
-Standard Odoo/ERP extension patterns: module metadata, business models, views/actions, and workflow customization layered on core Odoo apps. Exact proprietary implementation details are intentionally omitted.
-
-## Screenshots or demo
-
-Screenshots are available on request. Any shared visuals must be anonymized and used only with permission.
-
-## Source availability
-
-The production implementation lives in a private repository because it contains proprietary and/or client-specific work, configuration, or assets.
-
-This repository must not be treated as an open-source release of the production codebase.
-
-## License and attribution
-
-Documentation in this showcase repository is provided for portfolio demonstration. Third-party trademarks and product names remain the property of their owners. This README does **not** relicense any private source code.
-
-## Contact
-
-- GitHub: https://github.com/UsmanGhias
-- Profile / portfolio repositories under the same account
+Need it on another Odoo version, with changes for your workflow, or installed and tested on Odoo.sh? Email [iusmanghias@gmail.com](mailto:iusmanghias@gmail.com?subject=sale_sequence%20customisation) or see [CODCrafters](https://codcrafters.org).
 
 ---
 
-Status: Portfolio showcase (documentation only)
+This repository is the product page. The module source is private and comes with the licence.
+
+Built by [Usman Ghias](https://usmanghias.co.uk), [CODCrafters](https://codcrafters.org).
